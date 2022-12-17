@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "975ac123-71ec-4cc5-851f-1589d583336f",
+		"name": "TodoList",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "deleteTodo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/todoList/deleteTodo/6",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todoList",
+						"deleteTodo",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTodo",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{base_url}}/todoList/updateTodo/8",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todoList",
+						"updateTodo",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTodo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"title\": \"今天禮拜天耶!!\"\r\n        }"
+				},
+				"url": {
+					"raw": "{{base_url}}/todoList/createTodo",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todoList",
+						"createTodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTodo",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/todoList/getAllTodo",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todoList",
+						"getAllTodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTodoTitle",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":16,\r\n    \"title\":\"今天到府中圖書館~\"\r\n\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/todoList/updateTodoTitle",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todoList",
+						"updateTodoTitle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAllTodoDone",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n \"done\":true\r\n\r\n\r\n}"
+				},
+				"url": {
+					"raw": "{{base_url}}/todoList/updateAllTodoDone",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"todoList",
+						"updateAllTodoDone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
