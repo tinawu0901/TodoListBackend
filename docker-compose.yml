@@ -1,0 +1,14 @@
+version: "3"
+services:
+#APP Serve
+  app-server:
+    build: .
+    ports:
+      - "8000:8000"
+    networks:
+      - dockermysqlinittable_default
+    
+# 需要在services同级声明一下外部网络
+networks:
+  dockermysqlinittable_default:
+     external: true
